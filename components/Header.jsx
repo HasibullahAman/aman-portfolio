@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import Link from "next/link";
 import { Button } from "./ui/button";
 
@@ -27,10 +26,6 @@ const Header = () => {
       </div>
     </header>
   );
-=======
-const Header = () => {
-  return <header> Header</header>;
->>>>>>> 698d00662200afdd0a181a65e8d5608b67b93e98
 };
 
 export default Header;
