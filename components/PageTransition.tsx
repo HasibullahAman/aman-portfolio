@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion"
 import { usePathname } from "next/navigation"
 import React from "react";
 
-const pageTransition = ({ children }) => {
+const PageTransition = ({ children }) => {
     const pathname = usePathname();
     return (
         <AnimatePresence>
@@ -11,7 +11,7 @@ const pageTransition = ({ children }) => {
                 <motion.div initial={{ opacity: 1 }} animate={{
                     opacity: 0, transition: { delay: 1, duration: 0.4, ease: "easeInOut" },
                 }}
-                    className="h-screen w-screen fixed bg-primary top-o pointer-events-none"
+                    className="h-screen w-screen fixed bg-primary top-0 pointer-events-none"
                 />
                 {children}
             </div>
@@ -19,4 +19,7 @@ const pageTransition = ({ children }) => {
     )
 }
 
-export default pageTransition
+export default PageTransition
+
+
+
