@@ -41,7 +41,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div>Photo</div>
+          {/* photo */}
+          <div>
+            <Photo />
+          </div>
         </div>
       </div>
     </section>
