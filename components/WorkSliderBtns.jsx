@@ -17,4 +17,4 @@ const WorkSliderBtns = ({ containerStyles, btnStyles, iconsStyles }) => {
   );
 };
 
-export default WorkSliderBtns;
+export default WorkSliderBtns; 

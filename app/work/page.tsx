@@ -53,7 +53,7 @@ const projects = [
         github: "",
     },
     {
-        num: "02",
+        num: "03",
         category: "Backend",
         title: "project 3",
         description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -183,12 +183,12 @@ const Work = () => {
                     <div className='w-full xl:w-[50%]'>
                         <Swiper spaceBetween={30}
                             slidesPerView={1}
-                            className='xl:h-[520px] mb-12'
+                            className='xl:h-[520px] mb-22'
                             onSlideChange={handleSlideChange}
                         >
                             {projects.map((project, index) => {
                                 return <SwiperSlide key={index} className='w-full'>
-                                    <div className='h-[400px] relative group glex justify-center
+                                    <div className='h-[460px] relative group glex justify-center
                                     items-center bg-pink-50/20'>
                                         {/* overlay */}
                                         <div className='absolute top-0 bottom-0 w-ful h-full
@@ -202,12 +202,16 @@ const Work = () => {
                                 </SwiperSlide>
                             })}
                             {/* slider btn */}
-                            <WorkSliderBtns />
+                            <WorkSliderBtns containerStyles="flex gap-2 absolute right-0
+                            bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between
+                            xl:w-max xl:justify-none" btnStyles="bg-accent hover:bg-accent-hover
+                            text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center
+                            transition-all" iconsStyles="" />
                         </Swiper>
                     </div>
                 </div>
             </div>
         </motion.section>
-    )
-}
+    );
+};
 export default Work;
