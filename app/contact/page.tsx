@@ -22,17 +22,17 @@ const info = [
     {
         icon: <FaPhoneAlt />,
         title: 'phone',
-        ddescription: "(+93) 799 757 132"
+        description: "(+93) 799 757 132"
     },
     {
         icon: <FaEnvelope />,
         title: 'Email',
-        ddescription: "hasib.aman7@gmail.com"
+        description: "hasib.aman7@gmail.com"
     },
     {
         icon: <FaMapMarkerAlt />,
         title: 'Address',
-        ddescription: "Darul-Aman,Kabul,Afghaninstan"
+        description: "Darul-Aman,Kabul,Afghaninstan"
     },
 ]
 
@@ -76,7 +76,7 @@ const Contact = () => {
                                     <SelectItem value="est">Web Development</SelectItem>
                                     <SelectItem value="cst">Machine Learning</SelectItem>
                                     <SelectItem value="mst">Database</SelectItem>
-                                    <SelectItem value="dst">Data scince</SelectItem>
+                                    <SelectItem value="dst">Data Science</SelectItem>
                                 </SelectGroup>
                             </SelectContent>
                         </Select>
@@ -106,7 +106,7 @@ const Contact = () => {
                                 <div className="flex-1">
                                     <p className="text-white/60">{item.title}</p>
                                     <h3 className="text-xl">
-                                        {item.ddescription}
+                                        {item.description}
                                     </h3>
                                 </div>
                             </li>
