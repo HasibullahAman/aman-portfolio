@@ -1,4 +1,4 @@
-import localFont from "next/font/local";
+import { Geist, Geist_Mono, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 // Components
@@ -6,19 +6,20 @@ import Header from "../components/Header";
 import PageTransition from "../components/PageTransition";
 import StairTransition from "../components/StairTransition";
 
-const geistSans = localFont({
-  src: "/font/google/Geist-VariableFont_wght.ttf",
+const geistSans = Geist({
   variable: "--font-geist-sans",
+  subsets: ["latin"],
 });
 
-const geistMono = localFont({
-  src: "/font/google/GeistMono-VariableFont_wght.ttf",
+const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
 });
 
-const jetbrainsMono = localFont({
-  src: "/font/google/JetBrainsMono-VariableFont_wght.ttf",
-  variable: "--font-jetbrains-mono",
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetvraiinsMono",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
 });
 
 export const metadata = {
