@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/ui/sheet.tsx"  ],
   "exclude": [
     "node_modules"
   ]

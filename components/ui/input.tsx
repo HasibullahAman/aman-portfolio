@@ -1,14 +1,13 @@
 import * as React from "react";
 import { cn } from "../../lib/utils";
-import { Input as NextInput } from "@nextui-org/react";
 
-// Define the props type for CustomInput
-interface CustomInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+// Define the props type for Input
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   className?: string;
   type?: string;
 }
 
-const Input = React.forwardRef<HTMLInputElement, CustomInputProps>(
+const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ className, type = "text", ...props }, ref) => {
     return (
       <input
@@ -19,12 +18,12 @@ const Input = React.forwardRef<HTMLInputElement, CustomInputProps>(
           className
         )}
         ref={ref}
-        {...props} // Pass down all props to the input element
+        {...props}
       />
     );
   }
 );
 
-Input.displayName = "CustomInput";
+Input.displayName = "Input";
 
 export { Input };
